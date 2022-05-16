@@ -7,6 +7,9 @@ import {
 import { View, Text } from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons'
 import HomeNavigation from './HomeNavigation'
+import OrderComplete from '../Pages/OrderComplete/OrderComplete'
+import Setting from '../Pages/Setting/Setting'
+import Help from '../Pages/Help/Help'
 import { FullName } from '../Assistant/Name'
 import Styles from './style'
 
@@ -85,11 +88,27 @@ const CustomDrawerContentButtom = () => {
                ),
             }}
          />
+
          <Drawer.Screen
-            name="settings"
-            component={HomeNavigation}
+            name="OrderComplete"
+            component={OrderComplete}
             options={{
-               title: 'settings',
+               title: 'OrderComplete',
+               drawerIcon: ({ color }) => (
+                  <Icon
+                     name="help-circle-outline"
+                     size={25}
+                     style={{ marginRight: -20, color }}
+                  />
+               ),
+            }}
+         />
+
+         <Drawer.Screen
+            name="Settings"
+            component={Setting}
+            options={{
+               title: 'Settings',
                drawerIcon: ({ color }) => (
                   <Icon
                      name="settings-outline"
@@ -102,7 +121,7 @@ const CustomDrawerContentButtom = () => {
 
          <Drawer.Screen
             name="Help"
-            component={HomeNavigation}
+            component={Help}
             options={{
                title: 'Help',
                drawerIcon: ({ color }) => (

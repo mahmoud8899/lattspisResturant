@@ -9,14 +9,14 @@ function ToggleDrawer({ navigation }) {
             flexDirection: 'row',
             alignItems: 'center',
             justifyContent: 'center',
-            backgroundColor: 'red',
+            backgroundColor: '#ff3b2f85',
             borderRadius: 60,
             width: 65,
             height: 65,
          }}
          onPress={() => navigation.toggleDrawer()}
       >
-         <Icon name="menu-outline" size={60} />
+         <Icon name="menu-outline" size={60} style={{ color: 'white' }} />
       </TouchableOpacity>
    )
 }
