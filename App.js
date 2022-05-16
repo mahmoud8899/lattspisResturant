@@ -1,11 +1,15 @@
-
-import 'react-native-gesture-handler';
-import React from 'react';
-import { Text, View } from 'react-native';
-import MyDrawer from './src/Navigation/Navigation';
-import { NavigationContainer } from '@react-navigation/native';
-
+import { NavigationContainer } from '@react-navigation/native'
+import CustomDrawerContentButtom from './src/Navigation/CustomDrawerContentButtom'
+import React from 'react'
+import { SafeAreaView } from 'react-native'
 
 export default function App() {
-  return  <MyDrawer />
+
+
+
+  return <SafeAreaView style={{flex : 1}}>
+    <NavigationContainer>
+      <CustomDrawerContentButtom />
+    </NavigationContainer>
+  </SafeAreaView>
 }
