@@ -81,10 +81,16 @@ const FontsDefault = ScaledSheet.create({
       fontSize: '13@s',
    },
    stylesTextInButton: {
-      backgroundColor: COLORS.notClick,
-      color: COLORS.firstRed,
-      borderRadius: '10@s',
-      padding: '8@s',
+      fontSize: '18@s',
+   },
+   containerButton: {
+      backgroundColor: '#ff3b2f85',
+      height: 60,
+      borderRadius: 10,
+      alignItems: 'center',
+      flexDirection: 'row',
+      justifyContent: 'center',
+      marginTop: 30,
    },
    containerIcon: {
       width: '30@s',

@@ -39,7 +39,7 @@ export default function HomeScreen({ navigation }) {
             <Text
                style={[FontsDefault.TitleFont, FontsDefault.FontColorFirstRed]}
             >
-               HomeScreen
+               All Orders
             </Text>
          </View>
 
