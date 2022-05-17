@@ -68,6 +68,11 @@ const FontsDefault = ScaledSheet.create({
       fontFamily: 'Mitr-Bold',
       color: COLORS.light,
    },
+   fontSecondTitle: {
+      fontSize: '20@s',
+      fontFamily: 'Mitr-Bold',
+      color: COLORS.light,
+   },
    fontDescription: {
       fontSize: '14@s',
       lineHeight: 20,
