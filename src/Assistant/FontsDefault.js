@@ -14,6 +14,15 @@ const FontsDefault = ScaledSheet.create({
       marginBottom: 30,
       marginLeft: 30,
    },
+   ContainerButtonDrawer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: '#ff3b2f85',
+      borderRadius: '60@s',
+      width: '50@s',
+      height: '50@s',
+   },
    fontColorBlack: {
       color: COLORS.light,
    },
@@ -32,16 +41,32 @@ const FontsDefault = ScaledSheet.create({
    FontSize: {
       fontSize: '20@s',
    },
+   iconSize: {
+      fontSize: '25@s',
+   },
+   fontFamilyBold: {
+      fontFamily: 'Mitr-Bold',
+   },
+   fontFamilyMedium: {
+      fontFamily: 'Mitr-Medium',
+   },
+   fontFamilyLight: {
+      fontFamily: 'Mitr-Light',
+   },
+   fontFamilyRegular: {
+      fontFamily: 'Mitr-Regular',
+   },
+   fontFamilySemiBold: {
+      fontFamily: 'Mitr-SemiBold',
+   },
    fontButtonCart: {
       color: COLORS.white,
-      fontFamily: 'Mitr-Bold',
       fontSize: '16@s',
    },
    TitleFont: {
       fontSize: '24@s',
       fontFamily: 'Mitr-Bold',
       color: COLORS.light,
-      textTransform: 'capitalize',
    },
    fontDescription: {
       fontSize: '14@s',
@@ -55,6 +80,17 @@ const FontsDefault = ScaledSheet.create({
       color: COLORS.firstRed,
       borderRadius: '10@s',
       padding: '8@s',
+   },
+   containerIcon: {
+      width: '30@s',
+      height: '30@s',
+      borderRadius: 50,
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginRight: '10@s',
+   },
+   backgroundColorIcon: {
+      backgroundColor: COLORS.firstRed,
    },
 })
 

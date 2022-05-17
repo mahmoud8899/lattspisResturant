@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
    createDrawerNavigator,
    DrawerContentScrollView,
    DrawerItemList,
 } from '@react-navigation/drawer'
-import { View, Text } from 'react-native'
+import { View, Text, Switch } from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons'
 import HomeNavigation from './HomeNavigation'
 import OrderComplete from '../Pages/OrderComplete/OrderComplete'
@@ -12,41 +12,88 @@ import Setting from '../Pages/Setting/Setting'
 import Help from '../Pages/Help/Help'
 import { FullName } from '../Assistant/Name'
 import Styles from './style'
+import FontsDefault from '../Assistant/FontsDefault'
 
 const Drawer = createDrawerNavigator()
 
 const CustomDrawerContent = (props) => {
+   const [isEnabled, setIsEnabled] = useState(false)
+
+   const toggleSwitch = () => setIsEnabled((previousState) => !previousState)
+
    return (
       <DrawerContentScrollView>
-         <View>
-            <View style={Styles.container}>
-               <View>
-                  <Text style={[Styles.IconSizs, Styles.ColorOne]}>
-                     {FullName}
-                  </Text>
-               </View>
-               <View style={Styles.conteinerIcon}>
-                  <Icon
-                     name="close-outline"
-                     style={[Styles.IconSizs, Styles.colorWhite]}
-                  />
-               </View>
+         <View style={[Styles.mainContainer, Styles.containerFlex]}>
+            <View>
+               <Text
+                  style={[
+                     FontsDefault.TitleFont,
+                     FontsDefault.FontColorFirstRed,
+                  ]}
+               >
+                  {FullName}
+               </Text>
             </View>
-            <View style={Styles.border} />
+            <View
+               style={[
+                  FontsDefault.containerIcon,
+                  FontsDefault.backgroundColorIcon,
+               ]}
+            >
+               <Icon
+                  name="close-outline"
+                  style={[FontsDefault.iconSize, FontsDefault.fontColorWhite]}
+               />
+            </View>
          </View>
 
-         <View>
-            <View style={Styles.container}>
-               <View>
-                  <Text style={[Styles.IconSizs, Styles.ColorOne]}>
-                     Uppsala Resturant
-                  </Text>
-               </View>
+         <View style={[Styles.mainContainer]}>
+            <View>
+               <Text
+                  style={[
+                     FontsDefault.TitleFont,
+                     FontsDefault.FontColorFirstRed,
+                  ]}
+               >
+                  Uppsala Resturant
+               </Text>
             </View>
-            <View style={Styles.border} />
+
+            <View>
+               <Text
+                  style={[
+                     FontsDefault.TitleFont,
+                     FontsDefault.FontColorFirstRed,
+                  ]}
+               >
+                  Uppsala
+               </Text>
+            </View>
+         </View>
+         <View style={[Styles.mainContainer, Styles.containerFlex]}>
+            <View>
+               <Text
+                  style={[
+                     FontsDefault.fontDescription,
+                     FontsDefault.fontColorBlack,
+                     FontsDefault.fontFamilyRegular,
+                  ]}
+               >
+                  Open For Orders
+               </Text>
+            </View>
+            <View>
+               <Switch
+                  trackColor={{ false: '#767577', true: '#81b0ff' }}
+                  thumbColor={isEnabled ? '#f5dd4b' : '#f4f3f4'}
+                  ios_backgroundColor="#3e3e3e"
+                  onValueChange={toggleSwitch}
+                  value={isEnabled}
+               />
+            </View>
          </View>
 
-         <DrawerItemList {...props} />
+         <DrawerItemList {...props} labelStyle={{ fontFamily: 'Mitr-Bold' }} />
       </DrawerContentScrollView>
    )
 }
@@ -62,10 +109,8 @@ const CustomDrawerContentButtom = () => {
                backgroundColor: 'white',
             },
             overlayColor: null,
-            drawerLabelStyle: {
-               fontWeight: 'bold',
-            },
-            drawerActiveTintColor: 'red',
+            drawerLabelStyle: { fontFamily: 'Mitr-Regular', fontSize: 16 },
+            drawerActiveTintColor: '#ff3b2f85',
             drawerInactiveTintColor: 'black',
             drawerItemStyle: { backgroundColor: null },
             sceneContainerStyle: {

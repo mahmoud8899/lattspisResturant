@@ -1,22 +1,15 @@
 import React from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons'
+import FontsDefault from '../Assistant/FontsDefault'
 
 function ToggleDrawer({ navigation }) {
    return (
       <TouchableOpacity
-         style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'center',
-            backgroundColor: '#ff3b2f85',
-            borderRadius: 60,
-            width: 65,
-            height: 65,
-         }}
+         style={FontsDefault.ContainerButtonDrawer}
          onPress={() => navigation.toggleDrawer()}
       >
-         <Icon name="menu-outline" size={60} style={{ color: 'white' }} />
+         <Icon name="menu-outline" size={40} style={{ color: 'white' }} />
       </TouchableOpacity>
    )
 }

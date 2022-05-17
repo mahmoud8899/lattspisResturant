@@ -7,7 +7,7 @@ import FontsDefault from '../../Assistant/FontsDefault'
 export default function HomeScreen({ navigation }) {
    return (
       <View style={FontsDefault.containerChildren}>
-         <Text style={{ fontFamily: 'Mitr-Regular', color: 'black' }}>
+         <Text style={[FontsDefault.TitleFont, FontsDefault.FontColorFirstRed]}>
             HomeScreen
          </Text>
 
