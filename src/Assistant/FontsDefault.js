@@ -90,7 +90,7 @@ const FontsDefault = ScaledSheet.create({
       alignItems: 'center',
       flexDirection: 'row',
       justifyContent: 'center',
-      marginTop: 30,
+      marginTop: 15,
    },
    containerIcon: {
       width: '30@s',
