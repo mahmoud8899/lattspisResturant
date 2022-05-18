@@ -49,6 +49,7 @@ export default function HomeScreen({ navigation }) {
                   style={[
                      FontsDefault.fontSecondTitle,
                      FontsDefault.fontFamilyRegular,
+                     FontsDefault.fontColorWhite,
                   ]}
                >
                   #21354
@@ -58,7 +59,7 @@ export default function HomeScreen({ navigation }) {
                <Text
                   style={[
                      FontsDefault.fontDescription,
-                     FontsDefault.fontColorBlack,
+                     FontsDefault.fontColorWhite,
                      FontsDefault.fontFamilyRegular,
                   ]}
                >
@@ -70,7 +71,7 @@ export default function HomeScreen({ navigation }) {
                   <Text
                      style={[
                         FontsDefault.fontDescription,
-                        FontsDefault.fontColorBlack,
+                        FontsDefault.fontColorWhite,
                         FontsDefault.fontFamilyRegular,
                      ]}
                   >
@@ -84,7 +85,7 @@ export default function HomeScreen({ navigation }) {
                   <Text
                      style={[
                         FontsDefault.FontSize,
-                        FontsDefault.fontColorBlack,
+                        FontsDefault.fontColorWhite,
                         FontsDefault.fontFamilyBold,
                      ]}
                   >
@@ -98,13 +99,13 @@ export default function HomeScreen({ navigation }) {
                      <Icon
                         name="chevron-up-outline"
                         size={30}
-                        style={FontsDefault.FontColorFirstRed}
+                        style={FontsDefault.fontColorWhite}
                      />
                   ) : (
                      <Icon
                         name="chevron-down-outline"
                         size={30}
-                        style={FontsDefault.FontColorFirstRed}
+                        style={FontsDefault.fontColorWhite}
                      />
                   )}
                </TouchableOpacity>
@@ -115,7 +116,7 @@ export default function HomeScreen({ navigation }) {
                   <Text
                      style={[
                         FontsDefault.fontDescription,
-                        FontsDefault.fontColorBlack,
+                        FontsDefault.fontColorWhite,
                         FontsDefault.fontFamilyRegular,
                         Styles.marginFont,
                      ]}
@@ -125,7 +126,7 @@ export default function HomeScreen({ navigation }) {
                   <Text
                      style={[
                         FontsDefault.fontDescription,
-                        FontsDefault.fontColorBlack,
+                        FontsDefault.fontColorWhite,
                         FontsDefault.fontFamilyRegular,
                         Styles.marginFont,
                      ]}
@@ -135,7 +136,7 @@ export default function HomeScreen({ navigation }) {
                   <Text
                      style={[
                         FontsDefault.fontDescription,
-                        FontsDefault.fontColorBlack,
+                        FontsDefault.fontColorWhite,
                         FontsDefault.fontFamilyRegular,
                         Styles.marginFont,
                      ]}
@@ -145,7 +146,7 @@ export default function HomeScreen({ navigation }) {
                   <Text
                      style={[
                         FontsDefault.fontDescription,
-                        FontsDefault.fontColorBlack,
+                        FontsDefault.fontColorWhite,
                         FontsDefault.fontFamilyRegular,
                         Styles.marginFont,
                      ]}
@@ -155,7 +156,7 @@ export default function HomeScreen({ navigation }) {
                   <Text
                      style={[
                         FontsDefault.fontDescription,
-                        FontsDefault.fontColorBlack,
+                        FontsDefault.fontColorWhite,
                         FontsDefault.fontFamilyRegular,
                         Styles.marginFont,
                      ]}
@@ -165,7 +166,7 @@ export default function HomeScreen({ navigation }) {
                   <Text
                      style={[
                         FontsDefault.fontDescription,
-                        FontsDefault.fontColorBlack,
+                        FontsDefault.fontColorWhite,
                         FontsDefault.fontFamilyRegular,
                         Styles.marginFont,
                      ]}

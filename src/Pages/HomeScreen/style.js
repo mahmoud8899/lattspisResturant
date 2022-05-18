@@ -14,7 +14,7 @@ const Styles = ScaledSheet.create({
       backgroundColor: 'transparent',
    },
    mainContainerOrder: {
-      backgroundColor: '#ff3b2f30',
+      backgroundColor: '#ff3b2f85',
       padding: '12@s',
       borderRadius: '15@s',
       marginTop: '10@s',

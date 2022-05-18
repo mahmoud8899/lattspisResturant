@@ -13,6 +13,7 @@ import Help from '../Pages/Help/Help'
 import { FullName } from '../Assistant/Name'
 import Styles from './style'
 import FontsDefault from '../Assistant/FontsDefault'
+import LoginScreen from '../Pages/Login/Login'
 
 const Drawer = createDrawerNavigator()
 
@@ -169,6 +170,21 @@ const CustomDrawerContentButtom = () => {
             component={Help}
             options={{
                title: 'Help',
+               drawerIcon: ({ color }) => (
+                  <Icon
+                     name="help-circle-outline"
+                     size={25}
+                     style={{ marginRight: -20, color }}
+                  />
+               ),
+            }}
+         />
+
+         <Drawer.Screen
+            name="Login"
+            component={LoginScreen}
+            options={{
+               title: 'Login',
                drawerIcon: ({ color }) => (
                   <Icon
                      name="help-circle-outline"

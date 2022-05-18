@@ -25,7 +25,7 @@ const Styles = ScaledSheet.create({
       borderRadius: '6@s',
       height: '60@s',
       padding: '10@s',
-      marginTop: '30@s',
+      marginTop: '15@s',
    },
    Input: {
       color: COLORS.firstRed,

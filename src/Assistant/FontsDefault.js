@@ -103,6 +103,10 @@ const FontsDefault = ScaledSheet.create({
    backgroundColorIcon: {
       backgroundColor: COLORS.firstRed,
    },
+   containerImageChildren: {
+      width: '100%',
+      height: '300@s',
+   },
 })
 
 export default FontsDefault

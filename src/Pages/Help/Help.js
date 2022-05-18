@@ -1,10 +1,8 @@
 import React from 'react'
-import { View, Text, TouchableOpacity, TextInput } from 'react-native'
-import Icon from 'react-native-vector-icons/Ionicons'
+import { View, Text, TouchableOpacity } from 'react-native'
 import ToggleDrawer from '../../Components/ToggleDrawer'
 import FontsDefault from '../../Assistant/FontsDefault'
 import Styles from './Styles'
-import COLORS from '../../Assistant/Color'
 import InputScreen from '../../Components/InputScreen/InputScreen'
 
 export default function Help({ navigation }) {
@@ -26,7 +24,7 @@ export default function Help({ navigation }) {
                StyleContainer={Styles.styleContainerDescription}
             />
 
-            <View style={FontsDefault.containerButton}>
+            <TouchableOpacity style={FontsDefault.containerButton}>
                <Text
                   style={[
                      FontsDefault.fontColorWhite,
@@ -36,7 +34,7 @@ export default function Help({ navigation }) {
                >
                   Send
                </Text>
-            </View>
+            </TouchableOpacity>
          </View>
 
          <View style={FontsDefault.containerToggleDrawer}>
